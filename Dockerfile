@@ -5,11 +5,12 @@ COPY . .
 
 RUN go get -d -v ./...
 RUN go install -v ./...
-RUN GO111MODULE=on go build .
+RUN CGO_ENABLED=0 GO111MODULE=on go build .
 RUN ls -la
 
 FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 COPY --from=builder /go/src/app/helloworld .
-CMD ["./helloworld"]
+EXPOSE 8080
+CMD ["/root/helloworld"]
