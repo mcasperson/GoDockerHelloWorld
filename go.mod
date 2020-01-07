@@ -1,3 +1,3 @@
-module helloworld/v2
+module helloworld
 
 go 1.13
