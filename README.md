@@ -1,0 +1,1 @@
+This is the source code for the book [ECR, EKS and Go Docker images: A step by step guide to deploying to Kubernetes in AWS](https://www.amazon.com/ECR-EKS-Docker-images-Kubernetes-ebook/dp/B0846X4LTR/ref=sr_1_15?dchild=1&keywords=matthew+casperson&qid=1591219406&sr=8-15).
